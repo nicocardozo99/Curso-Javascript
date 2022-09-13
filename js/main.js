@@ -35,12 +35,15 @@ function validarPrecio(nombre) {
 }
 
 function cobrarProducto(nombre, precio) {
-    alert('Hamburguesa : '+nombre+'.\nEl total a pagar es $'+precio)
+  alert("Hamburguesa : " + nombre + ".\nEl total a pagar es $" + precio);
+  let pago = prompt("Con cuanto abona?");
 
+  if (precio < pago) {
+    alert("Su vuelto es $" + (pago - precio));
+  }
 }
-
 
 saludar();
 let nombreProducto = mostrarProductos();
-let precioProducto = validarPrecio(nombreProducto)
-cobrarProducto(nombreProducto, precioProducto)
+let precioProducto = validarPrecio(nombreProducto);
+cobrarProducto(nombreProducto, precioProducto);
