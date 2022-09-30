@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <main>
+        <h2>Menu</h2>
+        <div>
+            <ul>
+                <li>
+                    1- Bacon & Cheese
+                </li>
+                <li>
+                    2- Veggie
+                </li>
+                <li>
+                    3- Cheeseburguer
+                </li>
+            </ul>
+        </div>
+        <h3>Datos del envio</h3>
+        <form id="formulario"></form>
+        <fieldset class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre">
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido">
+            <br>
+            <label for="direccion">Direccion:</label>
+            <input type="text" name="direccion">
+            <br> <br>
+            <label for="chekbox">Recibir Novedades de Burguers</label>
+            <input type="checkbox">
+            <br> <br>
+            <textarea name="pedido" id="" cols="30" rows="10">Tu pedido</textarea>
+            <br> <br>
+            <input type="submit" name="" id="" value="Enviar">
+        </fieldset>
+    </main>
     <script src="./js/main.js"></script>
 </body>
 </html>
