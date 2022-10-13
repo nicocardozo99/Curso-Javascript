@@ -32,4 +32,5 @@ const agregarAlCarrito = (productoId) => {
     actualizarTotalesCarrito(carrito);
 };
 
-export { agregarAlCarrito, validarProductoRepetido };
+
+export { agregarAlCarrito, validarProductoRepetido, };
