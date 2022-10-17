@@ -1,7 +1,7 @@
 import { validarProductoRepetido } from "./src/accionesCarrito.js";
-import { productos } from './src/stock.js';
 
-const mostrarProductos = () => {
+
+const mostrarProductos = (productos) => {
   const contenedorProductos = document.getElementById("producto-contenedor");
 
   productos.forEach(producto => {
@@ -27,4 +27,4 @@ const mostrarProductos = () => {
   });
 };
 
-mostrarProductos();
+export { mostrarProductos };
