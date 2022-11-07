@@ -1,13 +1,13 @@
 import { actualizarTotalesCarrito } from './actualizarCarrito.js';
 import { productos } from './stock.js';
-import { obtenerCarritoStorage } from './storage.js';
+import { obtenerStorage } from './storage.js';
 
 let carrito = [];
 
 const validarProductoRepetido = (productoId) => {
 
     if(localStorage.getItem('carrito')) {
-        carrito = obtenerCarritoStorage();
+        carrito = obtenerStorage();
     }
 
     const productoRepetido = carrito.find(producto => producto.id === productoId);
@@ -56,12 +56,23 @@ const pintarCarrito = (carrito) => {
 };
 
 const eliminarProductoCarrito = (productoId) => {
-    const carritoStorage = obtenerCarritoStorage();
+    const carritoStorage = obtenerStorage();
     const carritoActualizado = carritoStorage.filter(producto => producto.id != productoId);
 
     actualizarTotalesCarrito(carritoActualizado);
     pintarCarrito(carritoActualizado);
 };
+
+const vaciarCarrito = document.getElementById('vaciar-carrito');
+
+vaciarCarrito.addEventListener('click', (productoId) => {
+
+        const carritoStorage = obtenerStorage();
+        const carritoActualizado = carritoStorage.filter(producto => producto.id == productoId);
+
+        actualizarTotalesCarrito(carritoActualizado);
+        pintarCarrito(carritoActualizado);
+})
 
 
 export { agregarAlCarrito, validarProductoRepetido, pintarCarrito, eliminarProductoCarrito };

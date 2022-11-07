@@ -3,7 +3,7 @@
         "id": 1,
         "nombre": "Camiseta Argentina Titular",
         "tipo": "Camiseta",
-        "desc": "Camiseta de juego Selección Argentina",
+        "desc": "Camiseta de juego Seleccion Argentina",
         "precio": 19000,
         "talle": "L",
         "cantidad":1,
@@ -12,9 +12,9 @@
 
     {
         "id": 2,
-        "nombre": "Camiseta Argentina Suplente",
+        "nombre": "Camiseta Argentina Alternativa",
         "tipo": "Camiseta",
-        "desc": "Camiseta de juego suplente Seleccón Argentina",
+        "desc": "Camiseta de juego suplente Seleccion Argentina",
         "precio": 19000,
         "talle": "M",
         "cantidad":1,
@@ -25,7 +25,7 @@
         "id": 3,
         "nombre": "Camiseta Argentina Titular",
         "tipo": "camiseta",
-        "desc": "Camiseta versión hincha Seleccón Argentina",
+        "desc": "Camiseta versión hincha Seleccion Argentina",
         "precio": 16000,
         "talle": "XL",
         "cantidad":1,
@@ -34,9 +34,9 @@
 
     {
         "id": 4,
-        "nombre": "Camiseta Argentina Suplente",
+        "nombre": "Camiseta Argentina Alternativa",
         "tipo": "Camiseta",
-        "desc": "Camiseta versión hincha Selección Argentina",
+        "desc": "Camiseta versión hincha Seleccion Argentina",
         "precio": 16000,
         "talle": "M",
         "cantidad":1,
@@ -45,7 +45,7 @@
 
     {
         "id": 5,
-        "nombre": "Campera Selección Argentina",
+        "nombre": "Campera Seleccion Argentina",
         "tipo": "Campera",
         "desc": "Campera reversible Selección Argentina",
         "precio": 25000,
@@ -56,7 +56,7 @@
 
     {
         "id": 6,
-        "nombre": "Balón Al Rihla",
+        "nombre": "Pelota Al Rihla",
         "tipo": "Balón",
         "desc": "Balón de la Copa del Mundo Qatar 2022",
         "precio": 14000,

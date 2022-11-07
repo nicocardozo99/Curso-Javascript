@@ -13,7 +13,7 @@ const productos =
 
     {
         id: 2,
-        nombre: "Camiseta Argentina Suplente",
+        nombre: "Camiseta Argentina Alternativa",
         tipo: "Camiseta",
         desc: "Camiseta de juego suplente Seleccón Argentina",
         precio: 19000,
@@ -35,7 +35,7 @@ const productos =
 
     {
         id: 4,
-        nombre: "Camiseta Argentina Suplente",
+        nombre: "Camiseta Argentina Alternativa",
         tipo: "Camiseta",
         desc: "Camiseta versión hincha Selección Argentina",
         precio: 16000,

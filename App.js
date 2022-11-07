@@ -1,4 +1,4 @@
-import { validarProductoRepetido } from "./src/accionesCarrito.js";
+import { pintarCarrito, validarProductoRepetido } from "./src/accionesCarrito.js";
 import { obtenerProductos } from "./src/obtenerProductos.js";
 
 
@@ -6,6 +6,7 @@ const mostrarProductos = async () => {
   const contenedorProductos = document.getElementById("producto-contenedor");
 
   const productos = await obtenerProductos();
+
 
   productos.forEach(producto => {
     const div = document.createElement('div');
@@ -29,5 +30,6 @@ const mostrarProductos = async () => {
     })
   });
 };
+
 
 export { mostrarProductos };

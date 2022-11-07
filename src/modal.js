@@ -4,7 +4,7 @@ const modalContenedor = document.querySelector('.modal-contenedor');
 const abrirCarrito = document.getElementById('cesta-carrito');
 const cerrarCarrito = document.getElementById('btn-cerrar-carrito');
 const modalCarrito = document.querySelector('.modal-carrito');
-const sweetAlert = document.getElementById('cesta-carrito');
+const sweetAlert = document.getElementById('vaciar-carrito');
 
 abrirCarrito.addEventListener('click', () => {
     modalContenedor.classList.toggle('modal-active')
@@ -27,11 +27,10 @@ modalCarrito.addEventListener('click', (e) => {
 });
 
 sweetAlert.addEventListener('click', () => {
-    Swal.fire({
-        icon: 'info',
-        title: 'Carrito',
-        text: 'Detalles de tu compra',
-        showConfirmButton: false,
-        timer: 4000,
-    })
-});
+        Swal.fire({
+            icon: 'success',
+            title: 'Carrito vacio',
+            showConfirmButton: true,
+            timer: 4000,
+        })
+    });
