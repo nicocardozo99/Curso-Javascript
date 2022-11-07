@@ -174,12 +174,8 @@ select {
   outline: none;
 }
 
-#vaciar-carrito {
-  cursor: pointer;
+.boton-comprar {
   background-color: rgb(59, 140, 202);
-  color: white;
-  border-color: rgb(112, 147, 174);
-  size: 5px;
 }
 
 .filtro {

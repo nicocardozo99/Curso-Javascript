@@ -1,10 +1,10 @@
-import { eliminarProductoCarrito } from "./accionesCarrito.js";
+import { confirmarCompra, eliminarProductoCarrito } from "./accionesCarrito.js";
 
 const modalContenedor = document.querySelector('.modal-contenedor');
 const abrirCarrito = document.getElementById('cesta-carrito');
 const cerrarCarrito = document.getElementById('btn-cerrar-carrito');
 const modalCarrito = document.querySelector('.modal-carrito');
-const sweetAlert = document.getElementById('vaciar-carrito');
+const sweetAlert = document.getElementById('cesta-carrito');
 
 abrirCarrito.addEventListener('click', () => {
     modalContenedor.classList.toggle('modal-active')
@@ -23,14 +23,15 @@ modalCarrito.addEventListener('click', (e) => {
 
     if (e.target.classList.contains('boton-eliminar')) {
         eliminarProductoCarrito(e.target.value)
-    };
+    }
 });
 
 sweetAlert.addEventListener('click', () => {
         Swal.fire({
-            icon: 'success',
-            title: 'Carrito vacio',
+            icon: 'icon',
+            title: 'Carrito',
+            text: 'Detalles de su compra',
             showConfirmButton: true,
-            timer: 4000,
+            timer: 2000,
         })
     });

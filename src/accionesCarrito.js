@@ -63,16 +63,16 @@ const eliminarProductoCarrito = (productoId) => {
     pintarCarrito(carritoActualizado);
 };
 
-const vaciarCarrito = document.getElementById('vaciar-carrito');
 
-vaciarCarrito.addEventListener('click', (productoId) => {
+const confirmarCompra = document.getElementById('confirmarCompra')
 
-        const carritoStorage = obtenerStorage();
-        const carritoActualizado = carritoStorage.filter(producto => producto.id == productoId);
+confirmarCompra.addEventListener ('click', (productoId) => {
+    const carritoStorage = obtenerStorage();
+    const carritoActualizado = carritoStorage.filter(producto => producto.id == productoId);
 
-        actualizarTotalesCarrito(carritoActualizado);
-        pintarCarrito(carritoActualizado);
+    actualizarTotalesCarrito(carritoActualizado);
+    pintarCarrito(carritoActualizado);
 })
 
 
-export { agregarAlCarrito, validarProductoRepetido, pintarCarrito, eliminarProductoCarrito };
+export { agregarAlCarrito, validarProductoRepetido, pintarCarrito, eliminarProductoCarrito, confirmarCompra };
